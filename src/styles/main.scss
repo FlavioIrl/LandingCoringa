@@ -1,5 +1,60 @@
-$bgColor: rgb(0, 255, 98);
+@use 'header';
+@use 'hero';
+@use 'variaveis';
+@use 'sinopse';
+@use 'trailer';
+@use 'plataformas';
+
+@font-face {
+    font-family: 'joker';
+    src: url('/gothicjoker-gxxgp.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
 
 body {
-    background-color: $bgColor;
+    background-color: #03040F;
+}
+
+.container {
+    width: 100%;
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'joker';
+    font-weight: 500;
+    color: variaveis.$corDeTextoTitulo;
+    font-size: 240px;
+}
+
+.text {
+    font-family: "Gothic A1", sans-serif;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 25px;
+} 
+
+.button {
+    background-color: #2C968F;
+    color: #fff;
+    border: none;
+    border-radius: 14px;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 8px 30px;
+    height: 40px;
+    margin: 15px;
+}
+
+.list-title {
+    text-align: center;
+    font-family: 'joker';
+    font-weight: 500;
+    font-size: 200px
 }

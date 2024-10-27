@@ -1,0 +1,39 @@
+@use 'variaveis';
+.sinopse{
+    background-color: variaveis.$corDeFundo;
+}
+
+.list-alerquin {
+    background-image: linear-gradient(to bottom, #082730 65%, #03040F);
+}
+
+.text-joker {
+    color: variaveis.$corDeTextoCoringa;
+}
+
+.text-arlequin {
+    color: variaveis.$corDeTextoArlequina;
+}
+
+
+.sinopse__list {
+    display: flex;
+    list-style: none;
+    
+    .sinopse__item{
+        margin-top: 70px;
+        margin-bottom: 195px;
+        
+        .text-item {
+            margin-left: 40px;
+            width: 800px;
+        }
+        
+        .image-joker{
+            width: 400px;
+            margin-left: 63px;
+            border-radius: 16px;
+        }
+    }
+}
+

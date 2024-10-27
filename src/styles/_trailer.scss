@@ -1,0 +1,14 @@
+.container-trailer {
+    display: grid;
+    place-items: center;
+    background-image: radial-gradient(ellipse at center, rgba(169, 18, 18, 0.8) 0%, rgba(3, 4, 15, 0.8) 68%, rgb(3, 4, 15) 100%);
+}
+
+.video-trailer {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: 10px solid #A91212;
+    border-radius: 28px;
+    width: 860px;
+    height: 515px;
+}

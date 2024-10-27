@@ -4,17 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CoringaLanding</title>
-    <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="stylesheet" href="./dist/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Gothic+A1&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header"> 
-        <div class="header__container">
-            <img class="header__logo" src="./Imagens/WBlogo.png" alt="#">
-            <Button class="header__button">Compre o Ingresso</Button>
-        </div>
-    </header>
-    <section class="hero">
-        <img class="hero__image" src="/Coringa-Landing/Imagens/Mask-Banner_waifu2x_art_noise1_scale.png" alt="">
-    </section>
+    <div class="container">
+        <header class="header"> 
+            <div class="header__container">
+                <img class="header__logo" src="./Imagens/WBlogo.png" alt="#">
+                <Button class="header__button button">Compre o Ingresso</Button>
+            </div> 
+        </header>
+        <section class="hero">
+            <img class="hero__image" src="/Imagens/Mask-Banner.png" alt="banner Coringa">
+            <h1 class="section-title">SINOPSE</h1>
+        </section>
+        <section class="sinopse">
+            <ul class="sinopse__list">
+                <li class="sinopse__item">
+                    <img class="image-joker" src="/Imagens/Coringa.png" alt="Foto Coringa de frente">
+                </li>
+                <li class="sinopse__item">
+                    <h1 class="list-title text-joker text-title-joker">Coringa</h1>
+                    <p class="text text-item"> <b class="text-joker">Arthur Fleck</b> após matar cinco pessoas por se revoltar contra o que achava ser uma injustiça contra si, é preso no Arkham State Hospital. Ficando conhecido como <b class="text-joker">Coringa</b> e vira símbolo de uma revolta popular contra o status quo. Na ala psiquiátrica quando cruza com <b class="text-arlequin">Lee Quinzel</b> em uma aula de canto , sua vida muda. A música carrega sentimentos entre os dois, que rapidamente reconhecem a insanidade <b class="text-joker">um</b> no <b class="text-arlequin">outro</b>.</p>
+                </li>
+            </ul>
+            <ul class="sinopse__list list-alerquin">
+                <li class="sinopse__item">       
+                    <h1 class="list-title text-arlequin">Arlequina</h1>
+                    <p class="text text-item"> Com o julgamento chegando, os dois se apaixonam. Incapaz de controlar seus sentimentos, logo a paixão vira dúvida. Um mais egocêntrico do que o outro, <b class="text-arlequin">Lee</b> e <b class="text-joker">Arthur</b> tentam se dominar, encontrando versões deturpadas de amor e canções. As músicas surgem como forma de <b class="text-arlequin">um</b> entrar no delírio do <b class="text-joker">outro</b>. Quando um parece ter breves rompantes de sanidade, é o outro que ritmadamente o leva à loucura. Emulando o <b class="text-joker">Coringa</b> original dos quadrinhos, a <b class="text-arlequin">Harley Quinn</b> tem uma origem incerta e motivações sombrias.</p>
+                </li>
+                <li class="sinopse__item">
+                    <img class="image-joker" src="/Imagens/Arlequina.png" alt="Foto Arlequina de frente">
+                </li>
+            </ul>
+        </section>
+        <section class="trailer">
+            <h1 class="section-title">trailer</h1>
+            <div class="container-trailer">
+                <iframe class="video-trailer" src="https://www.youtube.com/embed/exeVIM3j3y0?si=imNI1PJdyf0mcFhl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section>
+            <h1 class="section-title">plataformas</h1>
+            <ul class="plataform__list">
+                <li class="plataform__item">
+                    <img src="/Imagens/logo_yt_branco 1.png" alt="Logo Youtube">
+                    <h3 class="text text-plataform">Comprar</h3>
+                    <h1 class="text-plataform">R$29,90</h1>
+                    <button class="button plataform__item--button">Comprar</button>
+                </li>
+                <li class="plataform__item">
+                    <img src="/Imagens/logo_yt_branco 1.png" alt="Logo Youtube">
+                </li>
+                <li class="plataform__item">
+                    <img src="/Imagens/logo_yt_branco 1.png" alt="Logo Youtube">
+                </li>
+            </ul>
+        </section>
+    </div>
 </body>
 </html>
