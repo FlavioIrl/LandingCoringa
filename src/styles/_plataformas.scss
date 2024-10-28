@@ -1,21 +1,54 @@
-.plataform__list {
+.platform__list {
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
-
-    
 }
 
-.plataform__item {
+.platform__item {
+    background-image: linear-gradient(to bottom, #082730 20%, #03040F);
+    display: block;
+    width: 300px;
     margin-top: 44px;
+    border-radius: 32px;
+    padding-bottom: 48px;
+
+    &-type {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
     
-    .text-plataform {
+    &-sign {
+        font-size: 50px
+    }
+
+    &-valor {
+        font-size: 80px;
+    }
+
+    &-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-button {
+        margin-top: 52px;
+        background-color: #2C968F;
+        color: #fff;
+        border: none;
+        border-radius: 32px;
+        font-weight: bold;
+        font-size: 28px;
+        padding: 8px 88px;
+    }
+
+    &-text {
         font-family: "Gothic A1", sans-serif;
         color: #fff;
         font-weight: bolder;
-        font-size: 25px;
         text-align: center;
     }
 }
