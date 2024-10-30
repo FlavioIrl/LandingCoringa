@@ -4,6 +4,7 @@
 @use 'sinopse';
 @use 'trailer';
 @use 'plataformas';
+@use 'contatos';
 
 @font-face {
     font-family: 'joker';
@@ -23,6 +24,7 @@ body {
 
 .container {
     width: 100%;
+    margin: 0 auto;
 }
 
 .section-title {

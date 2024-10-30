@@ -1,0 +1,16 @@
+@use 'variaveis';
+
+.text-contatos {
+    font-family: "Gothic A1", sans-serif;
+    color: variaveis.$corDeTextoCoringa;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.contatos {
+
+    .contatos__item {
+        background-color: #fff;
+    }
+}
