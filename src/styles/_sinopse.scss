@@ -1,13 +1,14 @@
 @use 'variaveis';
+
 .sinopse{
-    background-color: variaveis.$corDeFundo;
+    background-color: variaveis.$corDeFundoAzul;
     align-items: center;
     justify-items: center;
 }
 
 .list-alerquin {
     justify-content: center;
-    background-image: linear-gradient(to bottom, #082730 65%, #03040F);
+    background-image: linear-gradient(to bottom, variaveis.$corDeFundoVerde 65%, variaveis.$corDeFundoAzul);
     width: 100%;
 }
 
