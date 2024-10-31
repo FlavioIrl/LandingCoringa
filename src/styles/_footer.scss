@@ -1,0 +1,35 @@
+@use 'variaveis';
+
+.contatos {
+    background-image: linear-gradient(to bottom, #082730 60%, #02171b);
+}
+
+.contatos-title{
+    text-align: center;
+    font-family: 'joker';
+    font-weight: 500;
+    color: variaveis.$corDeTextoTitulo;
+    font-size: 50px;
+}
+
+.text-contatos {
+    font-family: "Gothic A1", sans-serif;
+    color: #fff;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.contatos__list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.contatos__item {
+    &-image {
+        width: 50px;
+        margin: 0  auto;
+    }
+}
