@@ -1,8 +1,32 @@
+@use 'variaveis';
+
+.header__list {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    margin-right: 30px;
+    
+    &__item {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin-left: 10px;
+    }
+    &__icone{
+        width: 50px;
+        display: flex;
+    }
+}
+
+.icone__desenho {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+}
 
 .header__container {
     background-color: #00131C;
     display: flex;
-    justify-content: space-between
 }
 
 .header__logo {
@@ -10,12 +34,12 @@
 }
 
 .header__button {
-    background-color: #2C968F;
+    background-color: variaveis.$corDeBotao;
     color: #fff;
     border: none;
     border-radius: 14px;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 18px;
     padding: 8px 30px;
     height: 40px;
     margin: 15px;

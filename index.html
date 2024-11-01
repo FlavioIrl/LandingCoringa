@@ -12,17 +12,46 @@
 </head>
 <body>
     <div class="container">
-        <header class="header"> 
+        <header id="inicio" class="header"> 
             <div class="header__container">
                 <img class="header__logo" src="./Imagens/WBlogo.png" alt="#">
-                <Button class="header__button button">Compre o Ingresso</Button>
+                <ul class="header__list">
+                    <li class="header__list__item">
+                        <a href="#inicio">
+                            <div class="header__list__icone icone__desenho">
+                                <img class="icone__desenho" src="/Imagens/icone-casa.png" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="header__list__item">
+                        <a href="#coringa">
+                            <img class="header__list__icone" src="/Imagens/icone-coringa.png" alt="">
+                        </a>
+                    </li>
+                    <li class="header__list__item">
+                        <a href="#harley">
+                            <img class="header__list__icone" src="/Imagens/icone-harley.png" alt="">
+                        </a>
+                    </li>
+                    <li class="header__list__item">
+                        <a href="#trailer">
+                            <div class="header__list__icone icone__desenho">
+                                <img class="icone__desenho" src="/Imagens/icone-filme.png" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <a href="#">
+                        <Button class="header__button button">Assista o Filme</Button>
+                    </a>
+                </ul>
+                
             </div> 
         </header>
         <section class="hero">
             <img class="hero__image" src="/Imagens/Mask-Banner.png" alt="banner Coringa">
-            <h1 class="section-title">SINOPSE</h1>
+            <h1 id="coringa" class="section-title">SINOPSE</h1>
         </section>
-        <section class="sinopse">
+        <section id="coringa" class="sinopse">
             <ul class="sinopse__list">
                 <li class="sinopse__item">
                     <img class="image-joker" src="/Imagens/Coringa.png" alt="Foto Coringa de frente">
@@ -32,9 +61,9 @@
                     <p class="text text-item"> <b class="text-joker">Arthur Fleck</b> após matar cinco pessoas por se revoltar contra o que achava ser uma injustiça contra si, é preso no Arkham State Hospital. Ficando conhecido como <b class="text-joker">Coringa</b> e vira símbolo de uma revolta popular contra o status quo. Na ala psiquiátrica quando cruza com <b class="text-arlequin">Lee Quinzel</b> em uma aula de canto , sua vida muda. A música carrega sentimentos entre os dois, que rapidamente reconhecem a insanidade <b class="text-joker">um</b> no <b class="text-arlequin">outro</b>.</p>
                 </li>
             </ul>
-            <ul class="sinopse__list list-alerquin">
+            <ul id="harley" class="sinopse__list list-alerquin">
                 <li class="sinopse__item">       
-                    <h2 class="list-title text-arlequin">Arlequina</h2>
+                    <h2  class="list-title text-arlequin">Arlequina</h2>
                     <p class="text text-item"> Com o julgamento chegando, os dois se apaixonam. Incapaz de controlar seus sentimentos, logo a paixão vira dúvida. Um mais egocêntrico do que o outro, <b class="text-arlequin">Lee</b> e <b class="text-joker">Arthur</b> tentam se dominar, encontrando versões deturpadas de amor e canções. As músicas surgem como forma de <b class="text-arlequin">um</b> entrar no delírio do <b class="text-joker">outro</b>. Quando um parece ter breves rompantes de sanidade, é o outro que ritmadamente o leva à loucura. Emulando o <b class="text-joker">Coringa</b> original dos quadrinhos, a <b class="text-arlequin">Harley Quinn</b> tem uma origem incerta e motivações sombrias.</p>
                 </li>
                 <li class="sinopse__item">
@@ -42,7 +71,7 @@
                 </li>
             </ul>
         </section>
-        <section class="trailer">
+        <section id="trailer" class="trailer">
             <h1 class="section-title">trailer</h1>
             <div class="container-trailer">
                 <iframe class="video-trailer" src="https://www.youtube.com/embed/exeVIM3j3y0?si=imNI1PJdyf0mcFhl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -111,7 +140,7 @@
                         </li>
                     </ul>
                     <p class="text-contatos">
-                        2024 - Aluno <br> &copy; - Desenvolvido por : Flavio Irala <br>  (Full Stack Python - EBAC)
+                        2024 - Aluno <br> &copy; - Desenvolvido por : <b class="text-joker">Flávio Irala</b> <br>  (Full Stack Python - EBAC)
                     </p>
             </section>
         </footer>
