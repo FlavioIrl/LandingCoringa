@@ -11,46 +11,51 @@
     
 </head>
 <body>
-    <div class="container">
-        <header id="inicio" class="header"> 
-            <div class="header__container">
+    <div  id="inicio" class="container">
+        <header class="header"> 
+            <div  class="header__container">
                 <img class="header__logo" src="./Imagens/WBlogo.png" alt="#">
                 <ul class="header__list">
                     <li class="header__list__item">
-                        <a href="#inicio">
+                        <a href="#inicio" class="header__link">
                             <div class="header__list__icone ">
-                                <img class="icone__desenho" src="/Imagens/icone-casa.png" alt="">
-                                <button class="icone__texto icone__texto__inicio">Início</button>
+                                <img class="icone__desenho icone__desenho__inicio" src="/Imagens/icone-casa.png" alt="">
+                                <button class="icone__texto">Início</button>
                             </div>
                         </a>
                     </li>
                     <li class="header__list__item">
-                        <a href="#coringa">
+                        <a href="#coringa" class="header__link">
                             <div class="header__list__icone">
-                                <img class="icone__desenho" src="/Imagens/icone-coringa.png" alt="">
-                                <button class="icone__texto icone__texto__coringa">Coringa</button>
+                                <img class="icone__desenho icone__desenho__coringa" src="/Imagens/icons8-coringa-do-esquadrão-suicida-100.png" alt="">
+                                <button class="icone__texto ">Coringa</button>
                             </div>
                         </a>
                     </li>
                     <li class="header__list__item">
-                        <a href="#harley">
+                        <a href="#harley" class="header__link">
                             <div class="header__list__icone">
-                                <img class="icone__desenho" src="/Imagens/icone-harley.png" alt="">
-                                <button class="icone__texto icone__texto__harley">Harley Quinn</button>
+                                <img class="icone__desenho icone__desenho__harley" src="/Imagens/icons8-harley-quinn-suicide-squad-100.png" alt="">
+                                <button class="icone__texto ">Harley Quinn</button>
                             </div>
                         </a>
                     </li>
                     <li class="header__list__item header__list__icone--trailer">
-                        <a href="#trailer">
+                        <a href="#trailer" class="header__link">
                             <div class="header__list__icone ">
-                                <img class="icone__desenho" src="/Imagens/icone-filme.png" alt="">
-                                <button class="icone__texto icone__texto__trailer">Trailer</button>
+                                <img class="icone__desenho icone__desenho__trailer" src="/Imagens/icone-trailer.png" alt="">
+                                <button class="icone__texto ">Trailer</button>
                             </div>
                         </a>
                     </li>
-                    <a href="#">
-                        <Button class="header__button button">Assista o Filme</Button>
-                    </a>
+                    <li class="header__list__item header__list__icone--trailer">
+                        <a href="#plataformas" class="header__link">
+                            <div class="header__list__icone ">
+                                <img class="icone__desenho icone__desenho__plataforma" src="/Imagens/icone-tv.png" alt="">
+                                <button class="icone__texto ">plataformas</button>
+                            </div>
+                        </a>
+                    </li>
                 </ul>
                 
             </div> 
@@ -85,7 +90,7 @@
                 <iframe class="video-trailer" src="https://www.youtube.com/embed/exeVIM3j3y0?si=imNI1PJdyf0mcFhl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </section>
-        <section class="platform">
+        <section class="platform" id="plataformas">
             <h1 class="section-title">plataformas</h1>
             <ul class="platform__list">
                 <li class="platform__center">

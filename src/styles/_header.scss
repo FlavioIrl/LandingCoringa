@@ -1,4 +1,19 @@
 @use 'variaveis';
+.header__container {
+    background-color: #00131C;
+    display: flex;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    &__link{
+        text-decoration: none;
+    }
+}
 
 .header__list {
     display: flex;
@@ -10,107 +25,54 @@
         display: flex;
         align-items: center;
         list-style: none;
-        margin-left: 10px;
-        transition: transform 0.5s ease; /* Transição suave */
-
-    }
-
-    .header__list__icone--trailer:hover ~ .header__list__item {
-        transform: translateX(-30px); /* Ajuste o valor conforme necessário */
+        margin-left: 2px;        
     }
 
     &__icone {
+        
         position: relative;
         display: flex;
-
-        &:hover .icone__texto {
-            opacity: 1;
-            visibility: visible;
-        }
-        &:hover .icone__desenho {
-            opacity: 0;
-        }
     }
 }
 
 .icone__desenho {
-    object-fit: cover;
-    width: 50px;
-    height: 50px;
-    transition: opacity 0.5s ease;
+    background-color: variaveis.$corDeBotao;
+    border-radius: 10px 0px 0px 10px;
+
+    &__inicio {
+        padding: 3px 10px 4px 10px;
+        width: 53px;
+    }
+    &__coringa {
+        width: 40px;
+    }
+    &__harley {
+        width: 40px;
+    }
+    &__trailer {
+        padding: 5px;
+        width: 40px;
+    }
+    &__plataforma {
+        width: 40px;
+    }
 }
 
 .icone__texto {
-    /*adwadwdw
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    visibility: hidden;
-    white-space: nowrap;
-    text-align: center;
-    transition: opacity 0.5s ease;
-
+    text-decoration: none !important;
     background-color: variaveis.$corDeBotao;
     color: #fff;
     cursor: pointer;
     border: none;
-    border-radius: 14px;
+    padding-right: 10px;
+    border-radius: 0px 10px 10px 0px;
     font-weight: bold;
     font-size: 18px;
-    padding: 8px 30px;
-    height: 40px;
-    color: #fff; */
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    visibility: hidden;
-    background-color: variaveis.$corDeBotao;
-    color: #fff;
-    font-weight: bold;
-    font-size: 18px;
-    border-radius: 14px;
-    transition: opacity 0.5s ease;
-    text-align: center;
-    white-space: nowrap;
-
-    &__coringa {
-        padding: 8px 20px;
-        left: 30%;
-    }
-    &__harley{
-        padding: 8px 30px;
-    }
-    &__inicio{
-        padding: 8px 20px;
-    }
-    &__trailer{
-        padding: 8px 30px;
-
-    }
 }
 
 
 
-.header__container {
-    background-color: #00131C;
-    display: flex;
-}
 
 .header__logo {
     margin-left: 63px;
-}
-
-.header__button {
-    background-color: variaveis.$corDeBotao;
-    color: #fff;
-    border: none;
-    border-radius: 14px;
-    font-weight: bold;
-    font-size: 18px;
-    padding: 8px 30px;
-    height: 40px;
-    margin: 15px;
 }
