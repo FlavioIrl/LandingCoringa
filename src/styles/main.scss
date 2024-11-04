@@ -36,16 +36,8 @@ body {
     font-size: 240px;
 }
 
-.text {
-    font-family: "Gothic A1", sans-serif;
-    color: #fff;
-    font-weight: bolder;
-    font-size: 25px;
-} 
-
-.list-title {
-    text-align: center;
-    font-family: 'joker';
-    font-weight: 500;
-    font-size: 200px
+@media (max-width: 767px) {
+    .section-title {
+        font-size: 90px;
+    }
 }

@@ -1,7 +1,11 @@
 @use 'variaveis';
 
-.sinopse{
+
+
+.sinopse {
     background-color: variaveis.$corDeFundoAzul;
+    padding-top: 100px;
+    padding-bottom: 100px;
     align-items: center;
     justify-items: center;
 }
@@ -12,6 +16,12 @@
     width: 100%;
 }
 
+.sinopse__list__arlequin {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 30px;
+}
+
 .text-joker {
     color: variaveis.$corDeTextoCoringa;
 }
@@ -20,6 +30,19 @@
     color: variaveis.$corDeTextoArlequina;
 }
 
+.text {
+    font-family: "Gothic A1", sans-serif;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 25px;
+} 
+
+.list-title {
+    text-align: center;
+    font-family: 'joker';
+    font-weight: 500;
+    font-size: 200px
+}
 
 .sinopse__list {
     display: flex;
@@ -42,3 +65,48 @@
     }
 }
 
+@media (max-width: 767px) {
+    .sinopse{
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Alinha os itens no centro */
+        padding-top: 30px;
+        justify-content: center; /* Centraliza verticalmente */
+    }
+
+    .sinopse__list__arlequin {
+        margin: 0;
+    }
+
+    .sinopse__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+    }
+    .sinopse__list .sinopse__item{
+        margin: 0;
+    }
+    
+    .sinopse__list .sinopse__item .image-joker {
+        display: flex;
+        width: 300px;
+        margin: 0;
+    }
+
+    .sinopse__list .sinopse__item .text-item {
+        margin-left: 0;
+        width: 300px;
+    }
+
+    .list-title{
+        font-size: 120px;
+    }
+
+    .text {
+        text-align: center;
+        font-size: 15px;
+    } 
+
+}

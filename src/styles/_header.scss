@@ -4,6 +4,11 @@
     display: flex;
 }
 
+.header__link.active {
+    background-color: #00131C;
+    color: #fff;
+}
+
 .header {
     position: sticky;
     top: 0;
@@ -29,7 +34,6 @@
     }
 
     &__icone {
-        
         position: relative;
         display: flex;
     }
@@ -38,6 +42,7 @@
 .icone__desenho {
     background-color: variaveis.$corDeBotao;
     border-radius: 10px 0px 0px 10px;
+    transition: background-color 0.3s;
 
     &__inicio {
         padding: 3px 10px 4px 10px;
@@ -68,11 +73,39 @@
     border-radius: 0px 10px 10px 0px;
     font-weight: bold;
     font-size: 18px;
+    transition: background-color 0.3s;
 }
 
+.icone__texto.active {
+    background-color: #df3838;
+    color: #fff; 
+}
 
-
+.header__list__item:hover .icone__desenho,
+.header__list__item:hover .icone__texto, .active {
+    background-color: #df3838;
+}
 
 .header__logo {
-    margin-left: 63px;
+    margin-left: 100px; 
+}
+
+@media (max-width: 767px) {
+    .icone__texto {
+        display: none;
+    }
+    .header__list {
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .icone__desenho {
+        margin: 8px;
+        border-radius: 100px;
+    }
+    
+    .header__logo {
+        display: none;
+    }
+
 }

@@ -1,5 +1,10 @@
 @use 'variaveis';
 
+.platform {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
 .platform__list {
     display: grid;
     position: relative;
@@ -31,10 +36,6 @@
         font-size: 20px;
         margin-top: 20px;
         margin-bottom: 10px;
-    }
-    
-    &-sign {
-        font-size: 50px
     }
 
     &-valor {
@@ -83,5 +84,69 @@
             width: 65%;
             transition: width 0.3s ease;
         }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .text-platform {
+        text-align: center;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+    }
+
+    .platform {
+        width: 370px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .platform__list {
+        margin-bottom: 300px;
+    }
+    
+    .platform__item .platform__item-button{
+        font-size: 10px;
+        margin-top: 52px;
+        padding: 8px 20px;
+    }
+
+    .platform__item-sifrao  {
+        font-size: 12px;
+    }
+
+    .platform__item {
+        width: 100%;
+        position: absolute;
+        display: block;
+        width: 80px;
+        border-radius: 10px;
+        padding: 30px 50px;
+        margin: 0 auto;
+        margin-top: 40px;
+
+        &-imagem {
+            width: 60px;
+        }
+    
+        &-type {
+            font-size: 10px;
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+    
+        &-valor {
+            font-size: 20px;
+        }
+
+        &:hover {
+            padding-top: 30px;
+            .platform__item-imagem {
+                width: 82px;
+                transition: width 0.3s ease;
+            }
+        } 
     }
 }

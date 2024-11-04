@@ -1,3 +1,8 @@
+.trailer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
 .container-trailer {
     display: grid;
     place-items: center;
@@ -11,4 +16,16 @@
     border-radius: 28px;
     width: 860px;
     height: 515px;
+}
+
+@media (max-width: 767px) {
+    .trailer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .video-trailer{
+        margin-top: 50px;
+        width: 340px;
+        height: 260px;
+    }
 }

@@ -8,19 +8,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Gothic+A1&display=swap" rel="stylesheet">
-    
 </head>
-<body>
-    <div  id="inicio" class="container">
-        <header class="header"> 
-            <div  class="header__container">
+<body id="inicio">
+    <header class="header">
+        <section id="inicio" class="header">
+            <div  class="container header__container">
                 <img class="header__logo" src="./Imagens/WBlogo.png" alt="#">
-                <ul class="header__list">
+                <ul id="inicio"  class="header__list">
                     <li class="header__list__item">
-                        <a href="#inicio" class="header__link">
-                            <div class="header__list__icone ">
-                                <img class="icone__desenho icone__desenho__inicio" src="/Imagens/icone-casa.png" alt="">
-                                <button class="icone__texto">Início</button>
+                        <a href="#inicio" class="header__link ">
+                            <div class="header__list__icone">
+                                <img class="icone__desenho active icone__desenho__inicio" src="/Imagens/icone-casa.png" alt="">
+                                <button class="icone__texto active">Início</button>
                             </div>
                         </a>
                     </li>
@@ -57,14 +56,17 @@
                         </a>
                     </li>
                 </ul>
-                
             </div> 
-        </header>
-        <section class="hero">
-            <img class="hero__image" src="/Imagens/Mask-Banner.png" alt="banner Coringa">
-            <h1 id="coringa" class="section-title">SINOPSE</h1>
         </section>
-        <section id="coringa" class="sinopse">
+    </header>
+    <section class="hero">
+        <div class="container">
+            <img class="hero__image" src="/Imagens/Mask-Banner.png" alt="banner Coringa">
+            <h1 class="section-title">SINOPSE</h1>
+        </div>
+    </section>
+    <section id="coringa" class="sinopse">
+        <div class="container">
             <ul class="sinopse__list">
                 <li class="sinopse__item">
                     <img class="image-joker" src="/Imagens/Coringa.png" alt="Foto Coringa de frente">
@@ -74,89 +76,100 @@
                     <p class="text text-item"> <b class="text-joker">Arthur Fleck</b> após matar cinco pessoas por se revoltar contra o que achava ser uma injustiça contra si, é preso no Arkham State Hospital. Ficando conhecido como <b class="text-joker">Coringa</b> e vira símbolo de uma revolta popular contra o status quo. Na ala psiquiátrica quando cruza com <b class="text-arlequin">Lee Quinzel</b> em uma aula de canto , sua vida muda. A música carrega sentimentos entre os dois, que rapidamente reconhecem a insanidade <b class="text-joker">um</b> no <b class="text-arlequin">outro</b>.</p>
                 </li>
             </ul>
-            <ul id="harley" class="sinopse__list list-alerquin">
+        </div>
+    </section>
+    <section id="harley" class="sinopse list-alerquin">
+        <div class="container">
+            <ul class="sinopse__list sinopse__list__arlequin">
+                <li class="sinopse__item">
+                    <img class="image-joker" src="/Imagens/Arlequina.png" alt="Foto Arlequina de frente">
+                </li>
                 <li class="sinopse__item">       
                     <h2  class="list-title text-arlequin">Arlequina</h2>
                     <p class="text text-item"> Com o julgamento chegando, os dois se apaixonam. Incapaz de controlar seus sentimentos, logo a paixão vira dúvida. Um mais egocêntrico do que o outro, <b class="text-arlequin">Lee</b> e <b class="text-joker">Arthur</b> tentam se dominar, encontrando versões deturpadas de amor e canções. As músicas surgem como forma de <b class="text-arlequin">um</b> entrar no delírio do <b class="text-joker">outro</b>. Quando um parece ter breves rompantes de sanidade, é o outro que ritmadamente o leva à loucura. Emulando o <b class="text-joker">Coringa</b> original dos quadrinhos, a <b class="text-arlequin">Harley Quinn</b> tem uma origem incerta e motivações sombrias.</p>
                 </li>
-                <li class="sinopse__item">
-                    <img class="image-joker" src="/Imagens/Arlequina.png" alt="Foto Arlequina de frente">
-                </li>
             </ul>
-        </section>
-        <section id="trailer" class="trailer">
-            <h1 class="section-title">trailer</h1>
-            <div class="container-trailer">
-                <iframe class="video-trailer" src="https://www.youtube.com/embed/exeVIM3j3y0?si=imNI1PJdyf0mcFhl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-        </section>
-        <section class="platform" id="plataformas">
-            <h1 class="section-title">plataformas</h1>
-            <ul class="platform__list">
-                <li class="platform__center">
-                    <div class="platform__item">
-                        <div class="platform__item-center">
-                            <img class="platform__item-imagem" src="/Imagens/logo_yt_branco 1.png" alt="Logo Youtube">
-                        </div>
+        </div>
+    </section>
+    <section id="trailer" class="trailer">
+        <h1 class="section-title">trailer</h1>
+        <div class="container-trailer">
+            <iframe class="video-trailer" src="https://www.youtube.com/embed/exeVIM3j3y0?si=imNI1PJdyf0mcFhl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+    <section class="platform" id="plataformas">
+        <h1 class="section-title">plataformas</h1>
+        <ul class="platform__list">
+            <li class="platform__center">
+                <div class="platform__item">
+                    <div class="platform__item-center">
+                        <img class="platform__item-imagem" src="/Imagens/logo_yt_branco 1.png" alt="Logo Youtube">
+                    </div>
+                    <div class="text-platform">
                         <h3 class="platform__item-text platform__item-type">Comprar</h3>
                         <h2 class="platform__item-text platform__item-sifrao ">R$<b class="platform__item-valor">29,90</b></h2>
-                        <div class="platform__item-center">
-                            <button class="platform__item-button">Entrar</button> 
-                        </div>
                     </div>
-                </li>
-                <li class="platform__center">
-                    <div class="platform__item">
-                        <div class="platform__item-center">
-                            <img class="platform__item-imagem" src="/Imagens/netflix_logo 1.png" alt="Logo Netflix">
-                        </div>
+                    <div class="platform__item-center">
+                        <button class="platform__item-button">Entrar</button> 
+                    </div>
+                </div>
+            </li>
+            <li class="platform__center">
+                <div class="platform__item">
+                    <div class="platform__item-center">
+                        <img class="platform__item-imagem" src="/Imagens/netflix_logo 1.png" alt="Logo Netflix">
+                    </div>
+                    <div class="text-platform">
                         <h3 class="platform__item-text platform__item-type">Assinatura</h3>
                         <h2 class="platform__item-text platform__item-sifrao ">R$<b class="platform__item-valor">44,90</b></h2>
-                        <div class="platform__item-center">
-                            <button class="platform__item-button">Entrar</button>
-                        </div>
                     </div>
-                </li>
-                <li class="platform__center">
-                    <div class="platform__item">
-                        <div class="platform__item-center">
-                            <img class="platform__item-imagem" src="/Imagens/prime_logo_branco 1.png" alt="Logo PrimeVideo">
-                        </div>
+                    <div class="platform__item-center">
+                        <button class="platform__item-button">Entrar</button>
+                    </div>
+                </div>
+            </li>
+            <li class="platform__center">
+                <div class="platform__item">
+                    <div class="platform__item-center">
+                        <img class="platform__item-imagem" src="/Imagens/prime_logo_branco 1.png" alt="Logo PrimeVideo">
+                    </div>
+                    <div class="text-platform">
                         <h3 class="platform__item-text platform__item-type">Alugar</h3>
                         <h2 class="platform__item-text platform__item-sifrao ">R$<b class="platform__item-valor">15,90</b></h2>
-                        <div class="platform__item-center">
-                            <button class="platform__item-button">Entrar</button>
-                        </div>
                     </div>
-                </li>
-            </ul>
+                    <div class="platform__item-center">
+                        <button class="platform__item-button">Entrar</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <footer>
+        <section class="contatos">
+            <div class="container">
+                <h2 class="contatos-title">Meus Contatos</h2>
+                <ul class="contatos__list"> 
+                    <li class="contatos__item">
+                        <a href="https://www.facebook.com/profile.php?id=100009520895739&locale=pt_BR">
+                            <img class="contatos__item-image" src="./Imagens/facebook.png" alt="Facebook logo">
+                        </a>
+                    </li>
+                    <li class="contatos__item">
+                        <a href="https://github.com/FlavioIrl" style="margin-left: 30px; margin-right: 30px;">
+                            <img class="contatos__item-image" src="./Imagens/github.png" alt="Github logo">
+                        </a>
+                    </li>
+                    <li class="contatos__item"> 
+                        <a href="https://www.linkedin.com/in/fl%C3%A1vio-irala-pereira-16a2ab22b/">
+                            <img class="contatos__item-image" src="./Imagens/linkedin.png" alt="Linkedin logo">
+                        </a>
+                    </li>
+                </ul>
+                <p class="text-contatos">
+                    2024 - Aluno <br> &copy; - Desenvolvido por : <b class="text-joker">Flávio Irala</b> <br>  (Full Stack Python - EBAC)
+                </p>
         </section>
-        <footer>
-            <section class="contatos">
-                <div class="container">
-                    <h2 class="contatos-title">Meus Contatos</h2>
-                    <ul class="contatos__list"> 
-                        <li class="contatos__item">
-                            <a href="https://www.facebook.com/profile.php?id=100009520895739&locale=pt_BR">
-                                <img class="contatos__item-image" src="./Imagens/facebook.png" alt="Facebook logo">
-                            </a>
-                        </li>
-                        <li class="contatos__item">
-                            <a href="https://github.com/FlavioIrl" style="margin-left: 30px; margin-right: 30px;">
-                                <img class="contatos__item-image" src="./Imagens/github.png" alt="Github logo">
-                            </a>
-                        </li>
-                        <li class="contatos__item"> 
-                            <a href="https://www.linkedin.com/in/fl%C3%A1vio-irala-pereira-16a2ab22b/">
-                                <img class="contatos__item-image" src="./Imagens/linkedin.png" alt="Linkedin logo">
-                            </a>
-                        </li>
-                    </ul>
-                    <p class="text-contatos">
-                        2024 - Aluno <br> &copy; - Desenvolvido por : <b class="text-joker">Flávio Irala</b> <br>  (Full Stack Python - EBAC)
-                    </p>
-            </section>
-        </footer>
-    </div>
+    </footer>
+    <script src="/src/scripts/main.js"></script>
 </body>
 </html>
